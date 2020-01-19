@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Robotron | NIT SILCHAR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./img/icon.png">
+         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+       <style type="text/css">
+        #loader{position: fixed; top: 0; left: 0; z-index: 999; background: rgba(0,0,0, 0.9); width: 99.99vw; height: 99.99vh; overflow: hidden;}
+        #loaderCircle {
+        position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px; height: 80px;
+        border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid rgb(254,0,0); border-left: 10px solid rgb(254,0,0); ;
+        animation: spin 4s linear infinite;
+        animation-fill-mode: forwards;
+        }
+        a:hover{
+            text-decoration: none;
+            color:inherit;
+        }       
+.spinner{
+  width: 80px;
+  height: 80px;
+  
+  border: 2px solid #38dbff;
+  border-top:3px solid #014b5c;
+  border-radius: 100%;
+  
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+  
+  animation: spin 1s infinite linear;
+}
+.img-inside{
+
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+}
+@keyframes spin {
+        0% { transform:rotate(0deg); }
+        100% { transform:rotate(-360deg); }
+        }
+
+            .main-btn1 a{
+                display: inline-block;
+                border: 2px solid #fff;
+                padding: 8px 15px;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #ffffff;
+                text-decoration: none;
+                transition: all 0.5s;
+            }
+            
+            .main-btn1 a:hover{
+                background:#ffffff;
+                color:#000000;
+            }
+            .prize-info{
+                color: #00d2ff;
+                text-align: center;
+                font-size: 3vh;
+                width: 90%;
+                font-weight: 700;
+            }
+                  .module-name{
+                display:inline-block;
+                position:fixed;
+                margin:0;
+                color:#fff;
+                z-index: 100;
+                left: 20vh;
+                top: 3vh;
+            }
+            .module-name h2{
+                font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+            } 
+            @media (orientation:landscape){
+                .img-responsive{
+                    width:75% !important;
+                    height:15vh;
+                    padding-bottom:3%;
+                       }
+                .img-gap{
+                    margin-right:-10%;
+                    padding-right:0%;
+                }
+                .main-btn1{
+                    margin:9% 0 0 25%;
+                }
+                .mobile-break{
+                    display: none;
+                }
+            }
+            @media (orientation: portrait){
+                .img-gap{
+                    margin-right:-3%;
+                    margin-bottom: 4%;
+                    padding-right:0%;
+                }
+                   .module-name{
+                    display:none;
+                }
+            }
+        </style>
+    </head>
+
+<body onload="stopLoader()">
+    <div id="loader">
+            <img src="../../optimized/logo white-small.png" style="height: 60px;" class="img-inside">
+        <div class="spinner">
+
+        </div>
+    </div>
+    
+        <nav>
+          <div class="logo">
+              <img src="img/logo white.png" alt="" style="margin-top:-6%;">
+            
+          </div>
+          <div class="mini-logo">
+              <img src="img/mini_logo.png" alt="" style="margin-top:-44%;height: 80px;">
+          </div>
+          <ul>
+            <li><a href="#1"><i class="fa fa-bolt"></i> <em>Robowars</em></a></li>
+            <li><a href="#2"><i class="fa fa-futbol-o"></i> <em>Robosoccer</em></a></li>
+            <li><a href="#3"><i class="fa fa-road"></i> <em>Terrain Trader</em></a></li>
+            <li><a href="#4"><i class="fa fa-superpowers"></i> <em>Sumowars</em></a></li>
+            <li><a href="#5"><i class="fa fa-puzzle-piece"></i> <em>Robobuild</em></a></li>
+            <li><a href="#6"><i class="fa fa-image"></i> <em>Roboart</em></a></li>
+          </ul>
+        </nav>
+        <div class="module-name"><h2>ROBOTRON</h2></div>
+        <div class="main-btn1" style="position: fixed;margin: 0;color: #fff;z-index: 100;right: 4vh;top: 3vh;">
+            <a target="_blank" href='/form/event'>Register</a>
+        </div>
+        
+        <div class="slides">
+            <div class="slide" id="1">
+                <div class="content third-content">
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="first-section">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="left-content">
+                                                    <h2>Robowars</h2>
+                                                    <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">With current in the veins
+                                                        and blood in wires, be ready to witness sparks fly, as metal crushes
+                                                        metal in the most glorious of battles. Brace yourselves to be part of
+                                                        one of the most exciting
+                                                        tournaments, "<span style="color:#00d2ff;font-family: Electrolize;">ROBOWAR</span>", held under the Robotron Module of Tecnoesis.
+                                                        <br><span style="font-family: Electrolize;">IT'S BIGGER, BETTER AND IT'S BACK.
+                                                        LET THE WAR BEGIN.</span></p>
+                                                    <!-- <div class="main-btn1"><a href="#4">Continue Reading</a></div>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6" style="padding-left: 1.5vh;">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                    Anmol Singh  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 7754929988)<br>
+                                                    Bikashjyoti Das  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8638574294)<br>
+                                                    Debanjana Purkayastha  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8011786607)<br>
+                                                    Dhiman Seal <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 7002451664)<br>
+                                                    Sabuj Sakia  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8761813870)<br>
+                                                    Swapnil Sahu  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8303150011)<br>
+                                                    <div class="main-btn1"><a
+                                                            href="./robowar event detail.pdf" target="_blank">Download
+                                                            Details</a></div>
+                                                </p>
+        
+                                            </div>
+                                        </div>
+                                        <div class="row prize-info">
+                                            <div class="col-md-12">
+                                                Prizes worth 35K
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robowars/robowar1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robowars/robowar1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robowars/robowar2.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robowars/robowar2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robowars/robowar3.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robowars/robowar3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robowars/robowar4.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robowars/robowar4.jpg" alt=""></a>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="slide" id="2">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Robosoccer</h2>
+                                                <p style="font-size:1.1rem;text-align:justify;font-family:Electrolize">Sports has always aided us in our enjoyments. But now it’s time
+for an upgrade. Why not throw in a little technology, a tad of hard work, one
+Hella enthusiasm, and voila: we have ourselves the perfect balance of robotics
+and football : “<span style="font-family: Electrolize;color:#00d2ff">ROBOSOCCER 5.0</span>”. This event is your chance to find out how good
+your robotic skills can be by creating a bot that plays soccer.</p>
+                                                <!-- <div class="main-btn1"><a href="#4">Continue Reading</a></div>
+ -->                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                Pranay nandan  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8102205404)<br>
+                                                Rudramani Dubey  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9401478089)<br>
+Kolli Yashwanth   <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9381242583)<br>
+KVN Pranav <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9701094007)<br>
+Ayushi Johari  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9634077495)<br>
+Jinnat Ali Ahmed  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 6000105624)<br>
+
+
+
+                                                 <div class="main-btn1"><a href="./robosoccer event detail.pdf" target="_blank">Download Details</a></div>
+                                            </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 30K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row" >
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robosoccer/robosoccer1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robosoccer/robosoccer1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robosoccer/maxresdefault (2).jpg" class="single-gallery-item"><img class="img-responsive" src="img/robosoccer/maxresdefault (2).jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robosoccer/maxresdefault.jpg" class="single-gallery-item"><img class="img-responsive" src="img/robosoccer/maxresdefault.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/robosoccer/maxresdefault (1).jpg" class="single-gallery-item"><img class="img-responsive" src="img/robosoccer/maxresdefault (1).jpg" alt=""></a>
+                                    </div>
+                                  <!--   <div class="col-6">
+                                        <a href="img/image/background/7.jpg" class="single-gallery-item"><img src="img/image/background/7.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="img/image/background/9.jpg" class="single-gallery-item"><img src="img/image/background/9.jpg" alt=""></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Terrain Trader</h2>
+                                                <p style="font-size:1.2rem;text-align:justify;font-family: Electrolize;"><span style="font-family: Electrolize;color:#00d2ff">Terrain Treader 4.0</span>, one of the most eye-catching events under the
+                                                Robotron module, is an unparalleled event for testing your technical
+                                                knowledge and problem solving ability. Your task is to construct a
+                                                bot that can move effortlessly over a variety of terrains, overcome
+                                                the obstacles placed along the path and emerge a winner.</p>
+                                               <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                 <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                Rishiraj Paul Chowdhury  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9706262131)<br>
+                                                Akash Hazarika  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8471876020)<br>
+                                                Yuvraj Kumar  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8084791891)<br>
+                                                Nitesh Pandey  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8011648293)<br>
+                                                Fahad Sameer Islam  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 7002185308)<br>
+                                                Vaibhav Pal  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9140531754)<br>
+                                                Anshika Gupta  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 7426973427)<br>
+
+                                                 <div class="main-btn1" ><a href="./detail.pdf" target="_blank">Download Details</a></div>
+                                            </p>
+                                                <!-- <img src="img/first_service.jpg" alt="first service" style="width:85%;"> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 30K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain2.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain3.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <!-- <a href="img/Terrain_trader/terrain1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain3.jpg" alt=""></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                   <!--      <div class="col-md-6">
+                                            <div class="right-content">
+                                                <h2>Maecenas eu purus eu sapien</h2>
+                                                <p>Sed vitae felis in lorem mollis mollis eget in leo. Donec commodo, ex nec rutrum venenatis, nisi nisl malesuada magna, sed semper ipsum enim a ipsum. Aenean in ante vel mi molestie bibendum. Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
+                                                <div class="main-btn"><a href="#4">Continue Reading</a></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="4">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Sumowars</h2>
+                                                <p style="font-size:1.2rem;text-align:justify;font-family: Electrolize;"><span style="font-family: Electrolize;color:#00d2ff">Sumowars</span>, an autonomous robotic event, bots have to search and push the opponent bot out of a specified arena in order to win, all the while keeping itself inside the aforementioned arena. You have to Construct a mobile bot fully capable of detecting objects in its proximity, and with the ability to distinguish between black and white strips.</p>
+                                               <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                 <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                    Shubhankar Pandit  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8218751129)<br>
+                                                    Kunal Modi <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8486318401)<br>
+                                                    Ved Prakash Bhatt <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8876638991)<br>
+                                                    Palak Kejriwal <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 6388380521)<br>
+                                                    Monalisa Nath <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9101754523)<br>
+
+
+
+                                                 <div class="main-btn1"><a href="./Sumo Wars v3.pdf" target="_blank">Download Details</a></div>
+                                            </p>
+                                                <!-- <img src="img/first_service.jpg" alt="first service" style="width:85%;"> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 30K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    <div class="col-6 img-gap">
+                                        <a href="img/sumowars/maxresdefault.jpg" class="single-gallery-item"><img class="img-responsive" src="img/sumowars/maxresdefault.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/sumowars/Snapchat-1163648130.jpg" class="single-gallery-item"><img class="img-responsive" src="img/sumowars/Snapchat-1163648130.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/sumowars/hqdefault.jpg" class="single-gallery-item"><img class="img-responsive" src="img/sumowars/hqdefault.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/sumowars/maxresdefault (1).jpg" class="single-gallery-item"><img class="img-responsive" src="img/sumowars/maxresdefault (1).jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="5">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Robobuild</h2>
+                                                <p style="font-size:1.2rem;text-align:justify;font-family: Electrolize;">Have you ever wanted to own a robot which builds amazing structures for you?
+                                                    Why not create such a robot yourself!!
+                                                    We are back with a bigger and better version of <span style="font-family: Electrolize;color:#00d2ff">RoboBuild</span> under the aegis of
+                                                    Tecnoesis2020.A competition where your bots will have to build structures 
+                                                    and at the same time prevent opponent bots from destroying the same.
+                                                    Gear up for this race of construction and demolition and show case how efficient your botis!!!</p>
+                                               <!--  <div class="main-btn"><a href="#4">Continue Reading</a></div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                 <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                Rituraj Kumar   <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 6200002633)<br>
+                                                Abhishek Aman <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9660768136)<br>
+                                                Shivam <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 6387561485)<br>
+                                                Nirmita Biswas <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8134999696)<br>
+                                                Anuva Bhattacharjee <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 6000079319)<br>
+
+
+
+
+                                                 <div class="main-btn1" ><a href="./robobuild detail.pdf" target="_blank">Download Details</a></div>
+                                            </p>
+                                                <!-- <img src="img/first_service.jpg" alt="first service" style="width:85%;"> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 20K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    <!-- <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain2.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain3.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/Terrain_trader/terrain1.jpg" class="single-gallery-item"><img class="img-responsive" src="img/Terrain_trader/terrain3.jpg" alt=""></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="6">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2>Roboart</h2>
+                                                <p style="font-size:1.1rem;text-align:justify;font-family: Electrolize;">TECNOESIS provides every robotics enthusiast
+                                                amazing platform to delve and experiment first hand in the
+                                                awe-inspiring field of robotics. With no limitations to your
+                                                creative acumen and free reign to unleash the full potential of
+                                                your technical prowess, can you build that one bot to rule
+                                                them all?<br>
+
+                                                TECNOESIS, under the ROBOTRON module presents <br>"<span style="font-family: Electrolize;color:#00d2ff">RoboArt</span>
+                                                - The Art of Making Robots."</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <h2>Organisers</h2>
+                                                <p style="font-size:1.1rem;">
+                                                Manzil Hoque  <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8812941973)<br>
+                                                Wajahat Yusuf <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 7002492207)<br>
+                                                Nikita Saikia <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 8472818596)<br>
+                                                Shriti Mishra <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9752414409)<br>
+                                                Dibyanshu Saxena <br class="mobile-break">( <i class="fa fa-phone"></i> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 9455527955)<br>
+
+
+
+                                                <!-- <img src="img/first_service.jpg" alt="first service" style="width:85%;"> -->
+                                                <div class="main-btn1"><a href="./RoboArt event detail.pdf" target="_blank">Download Details</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row prize-info">
+                                        <div class="col-md-12">
+                                            Prizes worth 15K
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <!-- <div class="left-image">
+                                                <img src="img/second_service.jpg" alt="second service" style="width:130%;">
+                                            </div> -->
+                                             <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Widget Title -->
+                          <!--   <h5 class="widget-title">Gallery</h5> -->
+
+                            <!-- Footer Gallery -->
+                            <div class="footer-gallery">
+                                <div class="row">
+                                    <div class="col-6 img-gap">
+                                        <a href="img/roboart/roboart1.jpeg" class="single-gallery-item"><img class="img-responsive" src="img/roboart/roboart1.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/roboart/roboart2.jpeg" class="single-gallery-item"><img class="img-responsive" src="img/roboart/roboart2.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/roboart/roboart3.jpeg" class="single-gallery-item"><img class="img-responsive" src="img/roboart/roboart3.jpeg" alt=""></a>
+                                    </div>
+                                    <div class="col-6 img-gap">
+                                        <a href="img/roboart/roboart4.jpeg" class="single-gallery-item"><img class="img-responsive" src="img/roboart/roboart4.jpeg" alt=""></a>
+                                    </div>
+                                  <!--   <div class="col-6">
+                                        <a href="img/image/background/7.jpg" class="single-gallery-item"><img src="img/image/background/7.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="img/image/background/9.jpg" class="single-gallery-item"><img src="img/image/background/9.jpg" alt=""></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                   <!--      <div class="col-md-6">
+                                            <div class="right-content">
+                                                <h2>Maecenas eu purus eu sapien</h2>
+                                                <p>Sed vitae felis in lorem mollis mollis eget in leo. Donec commodo, ex nec rutrum venenatis, nisi nisl malesuada magna, sed semper ipsum enim a ipsum. Aenean in ante vel mi molestie bibendum. Quisque sit amet lacus in diam pretium faucibus. Cras vel justo lorem.</p>
+                                                <div class="main-btn"><a href="#4">Continue Reading</a></div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/confer.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script> 
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+
+    //preloader
+
+function stopLoader(){
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loaderCircle").style.display = "none";
+}
+
+    </script>
+</body>
+</html>
